@@ -1,0 +1,12 @@
+tb3_data_tools:
+  ros__parameters:
+    bag_path: /tmp/tb3_dataset
+    storage_id: sqlite3
+    serialization_format: cdr
+    sync_slop: 0.05
+    topics:
+      - /scan|sensor_msgs/msg/LaserScan|sensor_data
+      - /points|sensor_msgs/msg/PointCloud2|sensor_data
+      - /camera/color/image_raw|sensor_msgs/msg/Image|sensor_data
+      - /camera/depth/image_raw|sensor_msgs/msg/Image|sensor_data
+      - /camera/depth/points|sensor_msgs/msg/PointCloud2|sensor_data
